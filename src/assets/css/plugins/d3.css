@@ -1,0 +1,14 @@
+.d3-tip {
+    background-color: rgba(0,0,0,.4);
+    color: #ffffff;
+    padding: .2rem .5rem;
+    border-radius: .1rem;
+}
+
+.radar-line:hover {
+    fill-opacity: .5;
+}
+
+.bar:hover {
+    fill-opacity: .8;
+}

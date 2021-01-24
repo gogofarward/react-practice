@@ -1,0 +1,25 @@
+.blue {
+    color: blue;
+}
+
+:local(.title) {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+:global(.title) {
+    font-weight: bold;
+    color: aqua;
+}
+
+#module-style {
+    color: blueviolet;
+}
+
+#module-style .child-style {
+    color: yellow;
+}
+
+.style-after:after {
+    content: "!";
+}

@@ -1,0 +1,20 @@
+.rect {
+    width: 1rem;
+    height: 1rem;
+    background-color: blueviolet;
+}
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.anime-path-anime {
+    color: blue;
+}
+
+.anime-path-check {
+    color: red;
+}

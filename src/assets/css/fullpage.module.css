@@ -1,0 +1,18 @@
+.pure-page {
+    height: 100vh;
+    text-align: center;
+    padding-top: 45vh;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.top-btn {
+    position: fixed;
+    left: 2rem;
+    top: 1rem;
+    z-index: 9;
+}
+
+.top-btn a {
+    color: #ffffff;
+}

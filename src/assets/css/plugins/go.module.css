@@ -1,0 +1,12 @@
+.container {
+    background-color: #ffffff;
+    border: none;
+    height: 50vh;
+}
+
+.leftPanel {
+    background-color: #ffffff;
+    width: 300px;
+    height: auto;
+    border-right: .1rem solid #666666;
+}

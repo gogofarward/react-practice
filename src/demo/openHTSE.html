@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center;margin-top: 30vh;">
+    <button onClick=openUrl()>openWindow跳转</button>
+    <button onClick=locationUrl()>location跳转</button>
+</div>
+</body>
+
+<script>
+    function openUrl() {
+
+        // HTSE免登录地址，生成环境改为服务器域名或地址
+        let htse = window.open("http://192.168.0.114:1234/autoLogin", 'myWindow');
+
+        let count = 0;
+        // 考虑到目标页面可能未加载完成，每隔3s发送1次消息
+        let timer = setInterval(function () {
+
+            let message = {uid: "admin", password: "admin"};    //用户信息
+            htse.postMessage(message, "http://192.168.0.114:1234");     //目标域名+端口，必须与上面目标地址一致
+            if (++count > 3) {
+                clearInterval(timer);
+            }
+        }, 2000);
+
+    }
+
+    function locationUrl() {
+        window.open("http://192.168.0.114:1234/autoLogin?uid=admin&password=admin");
+        // window.location.href = "http://192.168.0.114:1234/autoLogin?uid=admin&password=admin";
+    }
+</script>
+</html>
